@@ -18,7 +18,7 @@ help: ## Targets which do not have help text are not shown
 metabase_version=v0.25.2
 
 download_metabase: ## Downloads metabase jar; uses wget
-	cp metabase.jar old-metabase.jar
+	-cp metabase.jar old-metabase.jar
 	wget -c --retry-connrefused --tries=0 http://downloads.metabase.com/$(metabase_version)/metabase.jar
 
 start_metabase: ## Starts metabase server
