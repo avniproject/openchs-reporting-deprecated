@@ -1,2 +1,4 @@
 metabase.jar
 .idea
+metabase.db.mv.db.mv.db
+*.trace.*
